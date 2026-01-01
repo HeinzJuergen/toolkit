@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	--color-primary: #d8292a;
+	--color-primary-dark: #b22223;
+	--color-primary-light: #e02b2c;
+	--color-secondary: #1e232c;
+	--color-secondary-dark: #1e232c;
+	--color-secondary-light: #1e232c;
+	--color-background: #1e232c;
+}
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", "sans-serif";
+	color: white;
+}
+body {
+	background-color: #1e232c;
+	overflow-x: hidden;
+}
+
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 0.05em 0 0.1em;
+	vertical-align: -0.1em;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+::-webkit-scrollbar-thumb {
+	background: #d8292a;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #b22223;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #a41f20;
+}
+::-webkit-scrollbar-track {
+	background: #242932;
+	border: 0px none #ffffff;
+}
+::-webkit-scrollbar-track:hover {
+	background: #242932;
+}
+::-webkit-scrollbar-track:active {
+	background: #242932;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+a.link:link,
+a.link:-webkit-any-link {
+	color: #d8292a;
+	text-decoration-color: #d8292a;
+	transition: text-decoration-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+a.link:link:hover,
+a.link:-webkit-any-link:hover {
+	color: #b22223;
+	text-decoration-color: #b22223;
+}
+.toasted {
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.25) !important;
+	backdrop-filter: blur(10px);
+	outline: #222833 solid 2.5px !important;
+	color: white;
+	border-radius: 10px !important;
+	box-shadow: none !important;
+}
+.toasted.burnt {
+	outline: var(--color-primary) solid 2.5px !important;
+}
+.toasted button.toast-close {
+	filter: brightness(0) invert(1);
+}
+
+a:any-link {
+	color: #d8292a;
+}
+a:any-link:hover {
+	color: #c12424;
+}
+
+a:any-link:active {
+	color: #b72223;
+}
+
+footer :any-link {
+	color: white !important;
+	text-decoration: none !important;
+}
+footer {
+	height: 50px;
+	margin-top: -50px;
+	opacity: 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	transition: opacity 0.35s ease-in-out;
+	pointer-events: none;
+}
+
+footer.active {
+	opacity: 1;
+	pointer-events: all;
+}
+footer .flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+footer .flex .rows p {
+	display: inline-block;
+	vertical-align: middle;
+}
+footer .flex img.logo {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+footer .flex img.feature {
+	width: 16px;
+	height: 16px;
+}
+footer .flex .rows img.emoji:hover {
+	animation: pulse 1s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(1.25);
+	}
+}

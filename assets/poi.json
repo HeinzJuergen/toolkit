@@ -1,0 +1,50 @@
+{
+	"Sonstiges": [
+		{ "value": "Das SG", "text": "SG" },
+		{ "value": "Die Staatsbank", "text": "Staatsbank" },
+		{ "value": "Die Zentralsbank", "text": "Zentralbank" },
+		{ "value": "Der Schwarzmarkt", "text": "Schwarzmarkt" },
+		{ "value": "Der Staudamm", "text": "Staudamm" },
+		{ "value": "Der Taucher", "text": "Taucher" },
+		{ "value": "Der Geldkonvoi", "text": "Geldkonvoi" },
+		{ "value": "Der Waffenkonvoi", "text": "Waffenkonvoi" }
+	],
+	"Gang HQ": [
+		{ "value": "Das Families HQ", "text": "Families HQ" },
+		{ "value": "Das Vagos HQ", "text": "Vagos HQ" },
+		{ "value": "Das Ballas HQ", "text": "Ballas HQ" },
+		{ "value": "Das Bloods HQ", "text": "Bloods HQ" }
+	],
+	"24/7": [
+		{ "value": "Der 24/7 am Families HQ", "text": "Families HQ" },
+		{ "value": "Der 24/7 am Unicorn", "text": "Unicorn" },
+		{ "value": "Der Little Seoul 24/7", "text": "Little Seoul" },
+		{ "value": "Der 24/7 im Einkaufszentrum", "text": "Einkaufszentrum" },
+		{ "value": "Der Vespucci 24/7", "text": "Vespucci" },
+		{ "value": "Der Morningwood 24/7", "text": "Morningwood" },
+		{ "value": "Der 24/7 an der Richman Street", "text": "Richman Street" },
+		{ "value": "Der Vinewood 24/7", "text": "Vinewood" },
+		{ "value": "Der Murrieta Heights 24/7", "text": "Murrieta Heights" },
+		{ "value": "Der Mirror Park 24/7", "text": "Mirror Park" },
+		{ "value": "Der Banham Canyon 24/7", "text": "Banham Canyon" },
+		{ "value": "Der 24/7 in der Grand Senora Wüste", "text": "Grand Senora Wüste" },
+		{ "value": "Der Sandy Shores 24/7", "text": "Sandy Shores" },
+		{ "value": "Der Harmony 24/7", "text": "Harmony" },
+		{ "value": "Der 24/7 an der Harmony Bank", "text": "Harmony Bank" },
+		{ "value": "Der Grapeseed 24/7", "text": "Grapeseed" },
+		{ "value": "Der nördlichste 24/7", "text": "Nördlichste (Mount Chilliad)" },
+		{ "value": "Der Chumash 24/7", "text": "Chumash" },
+		{ "value": "Der 24/7 am East East Highway", "text": "East East Highway" }
+	],
+	"Ammunation": [
+		{ "value": "Der Würfelpark Ammunation", "text": "Würfelpark" },
+		{ "value": "Der La Mesa Ammunation", "text": "La Mesa" },
+		{ "value": "Der Ammunation im Einkaufszentrum", "text": "Einkaufszentrum" },
+		{ "value": "Der Little Seoul Ammunation", "text": "Little Seoul" },
+		{ "value": "Der Morningwood Ammunation", "text": "Ammunation" },
+		{ "value": "Der Vinewood Ammunation", "text": "Vinewood" },
+		{ "value": "Der Chumash Ammunation", "text": "Chumash" },
+		{ "value": "Der Sandy Shores Ammunation", "text": "Sandy Shores" },
+		{ "value": "Der Paleto Bay Ammunation", "text": "Paleto Bay" }
+	]
+}

@@ -1,0 +1,52 @@
+body {
+	background-image: url("/img/links.png");
+	background-size: cover;
+	background-position: center;
+}
+section#landing {
+	background-color: rgba(0, 0, 0, 0.05);
+	width: 100svw;
+	min-height: 100svh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section#landing .container {
+	margin-top: 0.25em;
+	margin-bottom: 2em;
+}
+section#landing .container h1 {
+	font-size: 4em;
+	color: var(--color-primary);
+}
+section#landing .container h2 {
+	font-size: 1em;
+}
+
+section#landing .container .wrapper {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section#landing .container .wrapper .item {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	border: #222833 solid 2.5px;
+	border-radius: 10px;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	cursor: pointer;
+	height: 20em;
+}
+section#landing .container .wrapper .item .image {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: transform 0.25s ease-out;
+}
+section#landing .container .wrapper .item .image:hover {
+	transform: scale(1.075) rotate(0.75deg);
+	transition: transform 0.45s ease-out;
+}

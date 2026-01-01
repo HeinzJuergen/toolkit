@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="initial-scale=1.0" />
+		<title>Sperrzonen Generator | GrandRP Toolkit</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+		<script src="js/pages/grandrp/sperrzone.js"></script>
+
+		<script src="https://kit.fontawesome.com/57ac75aec9.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/pages/grandrp/sperrzone.css" />
+	</head>
+
+	<body>
+		<section id="landing">
+			<div class="container">
+				<h1>GrandRP-Toolkit</h1>
+				<br />
+				<div class="wrapper">
+					<div class="item">
+						<h2>Sperrzonen Generator</h2>
+						<br />
+						<select id="poi">
+							<option value="custom_poi">Eigene Ortsangabe</option>
+						</select>
+						<input type="text" id="custom_poi" placeholder="Eigener Ort" style="display: none" />
+						<input type="number" id="distance" min="0" max="2000" placeholder="150m" />
+						<br /><br />
+						<div class="text-wrapper" id="text-new">
+							<p class="line1"><span class="text_poi"></span> (+<span class="text_distance"></span>) ist eine Sperrzone.</p>
+							<p class="line2">Es muss mit Beschuss gerechnet werden!</p>
+							<div class="copy-buttons">
+								<button class="copy new all"><i class="bi bi-clipboard"></i> Alles</button>
+								<button class="copy new line1"><i class="bi bi-clipboard"></i> Zeile 1</button>
+								<button class="copy new line2"><i class="bi bi-clipboard"></i> Zeile 2</button>
+							</div>
+						</div>
+						<p class="count text-new">0</p>
+						<div class="text-wrapper" id="text-done">
+							<p class="line1"><span class="text_poi"></span> (+<span class="text_distance"></span>) ist nicht länger eine Sperrzone.</p>
+							<p class="line2">Wir bedanken uns für Ihr Verständnis!</p>
+							<button class="copy done all"><i class="bi bi-clipboard"></i> Alles</button>
+							<button class="copy done line1"><i class="bi bi-clipboard"></i> Zeile 1</button>
+							<button class="copy done line2"><i class="bi bi-clipboard"></i> Zeile 2</button>
+						</div>
+						<p class="count text-done">0</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>© 2026 Heinz Juergen</p>
+		</footer>
+		<script>
+			twemoji.parse(document.body, {
+				folder: "svg",
+				ext: ".svg",
+			});
+		</script>
+	</body>
+</html>

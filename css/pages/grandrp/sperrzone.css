@@ -1,0 +1,117 @@
+body {
+	background-image: url("/img/links.png");
+	background-size: cover;
+	background-position: center;
+	user-select: none;
+}
+section#landing {
+	background-color: rgba(0, 0, 0, 0.05);
+	width: 100svw;
+	min-height: 100svh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section#landing .container {
+	margin-top: 0.25em;
+	margin-bottom: 2em;
+}
+section#landing .container h1 {
+	font-size: 4em;
+	color: var(--color-primary);
+}
+section#landing .container h2 {
+	font-size: 1em;
+}
+
+section#landing .container .wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+section#landing .container .wrapper .item {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	border: #222833 solid 2.5px;
+	border-radius: 10px;
+	padding: 20px;
+}
+section#landing .container .wrapper .item span {
+	background: #272e3a;
+}
+section#landing .container .wrapper .item select,
+section#landing .container .wrapper .item input {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	border-radius: 5px;
+	border: #222833 solid 2.5px;
+	padding: 2.5px 5px;
+}
+section#landing .container .wrapper .item input {
+	height: 18px;
+}
+section#landing .container .wrapper .item select:focus,
+section#landing .container .wrapper .item input:focus {
+	outline: none;
+}
+section#landing .container .wrapper .item select option {
+	background: #1c212a;
+	backdrop-filter: blur(10px);
+	border-radius: 5px;
+	border: #222833 solid 2.5px;
+}
+section#landing .container .wrapper .item select optgroup[label] {
+	background: #15191f;
+	backdrop-filter: blur(10px);
+	border-radius: 5px;
+	border: #222833 solid 2.5px;
+}
+section#landing .container .wrapper .item select option:checked {
+	background: #762124;
+}
+section#landing .container .wrapper .text-wrapper {
+	border: #222833 solid 2.5px;
+	border-radius: 10px;
+	padding: 20px;
+	transition: border-color 0.15s ease-in;
+}
+section#landing .container .wrapper .text-wrapper.limited {
+	border: #55647f solid 2.5px;
+}
+section#landing .container .wrapper .text-wrapper p {
+	user-select: none !important;
+}
+.count {
+	position: relative;
+	right: 10px;
+	text-align: right;
+	bottom: 25px;
+	user-select: none !important;
+	color: #364155;
+}
+section#landing .container .wrapper .text-wrapper .copy-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	user-select: none;
+}
+section#landing .container .wrapper .text-wrapper button {
+	margin-top: 5px;
+	margin-bottom: -5px;
+	background: #1c212a;
+	backdrop-filter: blur(10px);
+	border: #222833 solid 2.5px;
+	border-radius: 5px;
+	padding: 2.5px 5px;
+	cursor: pointer;
+	transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+section#landing .container .wrapper .text-wrapper button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+section#landing .container .wrapper .text-wrapper button:not(:disabled):active {
+	transform: scale(0.95);
+}
